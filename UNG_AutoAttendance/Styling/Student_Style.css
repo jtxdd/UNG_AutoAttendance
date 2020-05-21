@@ -1,0 +1,257 @@
+﻿@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+/* ^for font->  'Open Sans' */
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
+
+/* body */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #012560;
+    color: #393333;
+    margin: 0;
+    overflow: hidden;
+    font-family: Verdana;
+}
+ /*---------------------------------------------------------------------------------*/
+
+/*top sand color header*/
+.top {
+    margin: 0;
+    padding:25px;
+    width: 100%;
+    background-color: #d1c5bf;
+    text-align: center;
+}
+/*---------------------------------------------------------------------------------*/
+
+/*ung img logo on left*/
+.logo {
+    float: left;
+    display: block;
+    padding: 0;
+    margin: -50px 0 0 0.5%;
+    max-width: 293px;
+    -webkit-transition: all 0.0s ease;
+    transition: all 0.0s ease;
+}
+.logo.rabbits {
+    margin: -5px 0 0 0.5%;
+}
+.logo img {
+    float: left;
+    max-width: 411px;
+    width: 100%;
+    clear: right;
+    image-rendering: -webkit-optimize-contrast;
+}
+.logo img.bottom {
+    display: block;
+}
+.logo img.scroll { 
+    display: none;
+}
+/*---------------------------------------------------------------------------------*/
+
+/*center box*/
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/*---------------------------------------------------------------------------------*/
+
+/*horizontal box*/
+.rowbox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+/*---------------------------------------------------------------------------------*/
+
+/* change selection - return button */
+.rtrnbtn {
+    float: right;
+    padding: 1px 12px 2px 12px;
+    text-align: center;
+    display: flex;
+    overflow: hidden;
+    border: none;
+    background-color: #393333;
+    color: #fff;
+    font-family: Verdana;
+    font-size: 12pt;
+    transition: all 0.5s ease-in-out;
+    opacity:1;
+}
+.rtrnbtn:before {
+    font-family: FontAwesome;
+    content: "\f08b";
+    position: absolute;
+    /*top: 8px;*/
+    right: -20px;
+    transition: all 0.5s ease-in-out;
+    opacity: 0.5;
+}
+.rtrnbtn:hover:before {
+    right: 7px;
+    display:inline;
+    position: relative;
+    opacity: 0.9;
+    transition: all 0.5s ease-in-out;
+}
+/*---------------------------------------------------------------------------------*/
+
+/* for main labels */
+.select {
+    color: #fff;
+    font-size: 16pt;
+}
+/*---------------------------------------------------------------------------------*/
+
+/* logout div for log out button */
+.logoutdiv {
+    float: right;
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: -55px;
+}
+/* logout button */
+.loutbtn {
+    float: right;
+    padding: 1px 12px 2px 12px;
+    text-align: center;
+    display: inline-block;
+    overflow: hidden;
+    border: none;
+    background-color: #393333;
+    color: #fff;
+    font-family: Verdana;
+    font-size: 14pt;
+    transition: all 0.5s ease-in-out;
+    opacity:1;
+    cursor: pointer;
+    margin: 0px 5px 0px 0px;
+    box-shadow: 0px 1px 2px 0px #393333, 0px 0.2px 2px 0px #393333;
+}
+/*
+.loutbtn:before {
+    font-family: FontAwesome;
+    content: "\f08b";
+    position: absolute;
+    right: -20px;
+    transition: all 0.5s ease-in-out;
+    opacity: 0.5;
+}
+.loutbtn:hover:before {
+    right: 7px;
+    display:inline;
+    position: relative;
+    opacity: 0.9;
+    transition: all 0.5s ease-in-out;
+}
+/*---------------------------------------------------------------------------------*/
+/**/ 
+
+
+/* grid container & item */
+.grid-container {
+    display: grid;
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
+    grid-template-columns: auto auto auto;
+    padding: 5px;
+}
+.grid-item {
+    border: 1px solid #fff;
+    font-size: 16pt;
+}
+/*---------------------------------------------------------------------------------*/
+
+/*buttons*/
+.btns {
+    height: 125px;
+    width: 225px;
+    margin: 25px;
+    opacity: 0.7;
+    color: #fff;
+    font-family: Verdana;
+    font-size: 14pt;
+}
+
+/*button hover*/
+.btns:hover {    
+    opacity: 1;
+}
+.grow {
+    display: inline-block;
+    transition-duration: 0.7s;
+    transition-property: transform;
+    -webkit-tap-highlight-color: transparent;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px transparent;
+}
+.grow:hover {
+    transform: scale(1.3);
+}
+/*---------------------------------------------------------------------------------*/
+
+/* gridview */
+.mygrid {
+    display: flex;
+    justify-content: center;
+    /*align-self: center;*/
+    background-color: lightgray;
+    border: solid 1px black;
+    text-align: center;
+    max-width: 100%;
+    margin: 0px 0% 10px 0%;
+    padding: 0px 0px 0px 0px;
+}
+.gridheader {
+    background-color: lightgray;
+    color: black;
+    text-align: center;
+    font-size: 13pt;
+    padding: 0px 0px 0px 0px;
+}
+.gridrows {
+    background-color: #fff;
+    font-size: 13pt;
+    color: #000;
+    text-align: center;
+    font-variant: small-caps;
+    padding: 0px 0px 0px 0px;
+}
+.gridrows:hover {
+    background-color: #ffc82e;
+    color: #000;
+}
+.pager {
+    background-color: #fadd7a;
+    color: #fff;
+    text-align: left;
+}
+.mygrid td {
+    padding: 5px;
+}
+.mygrid th {
+    padding: 5px 10px 5px 10px;
+    text-align: center;
+}
+/*---------------------------------------------------------------------------------*/
+
+/*drop down list*/
+.ddlist {
+    font-family: Verdana;
+    font-size: 12pt;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 2px 0px 2px 5px;
+    /*margin-right: 2.5%;*/
+}
+/*---------------------------------------------------------------------------------*/

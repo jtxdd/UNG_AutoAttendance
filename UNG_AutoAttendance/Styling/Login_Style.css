@@ -1,0 +1,280 @@
+﻿@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+/* ^for font->  'Open Sans' */
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
+
+/*body*/
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*color: #393333;*/
+    margin: 0 0 0 0;
+    overflow: hidden;
+    font-family: Verdana;
+    background-image: url('../Images/ungsky.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-origin: border-box;
+    background-attachment:fixed;
+}
+/*---------------------------------------------------------------------------------*/
+
+/*top sand color header*/
+.top {
+    margin: 0;
+    padding:25px;
+    width: 100%;
+    background-color: #d1c5bf;
+    text-align: center;
+}
+/*---------------------------------------------------------------------------------*/
+
+
+/*---------------------------------------------------------------------------------*/
+/*ung img logo on left*/
+.logo {
+    float: left;
+    display: block;
+    padding: 0;
+    margin: -50px 0 0 0.5%;
+    max-width: 293px;
+    -webkit-transition: all 0.0s ease;
+    transition: all 0.0s ease;
+}
+.logo.rabbits {
+    margin: -5px 0 0 0.5%;
+}
+.logo img {
+    float: left;
+    max-width: 411px;
+    width: 100%;
+    clear: right;
+    image-rendering: -webkit-optimize-contrast;
+}
+.logo img.bottom {
+    display: block;
+}
+.logo img.scroll { 
+    display: none;
+}
+/*---------------------------------------------------------------------------------*/
+
+/*inner center box*/
+.box {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Lucida Sans Unicode';
+    align-items: center;
+    justify-content: center;
+    margin: 10% 40% 10% 40%;
+    background-color: #f5eeea;
+    border-radius: 5%;
+    padding: 25px 0px 50px 0px;
+    box-shadow: 0px 4px 8px 0px #393333, 0px 6px 20px 0px #393333;
+}
+/*---------------------------------------------------------------------------------*/
+
+/*inside box*/
+.inner {
+    margin: 15px;
+}
+/*---------------------------------------------------------------------------------*/
+
+/*head in box*/
+.boxhead {
+    /*display: flex;
+    justify-content: center;
+    flex-direction: column;*/
+    position: relative;
+    background-color: rgba(1, 37, 96, 0.9);
+    font-size: 32pt;
+    border: solid 0.5px #ffc82e;
+    text-align: center;
+    color: #fff;
+    padding: 1% 20% 2px 20%;
+    margin: 0% 1% 1% 1%;
+    /*align-items: center;*/
+    border-radius: 25px;
+    box-shadow: 0px 4px 8px 0px #393333, 0px 1px 10px 0px #393333;
+}
+
+/*---------------------------------------------------------------------------------*/
+
+
+/*textbox effects*/
+.mytb {
+    background-image: url('../Images/fa-user4-small.png');
+    background-repeat: no-repeat;
+    height: 34px;
+    width: 150px;
+    padding-left: 36px;
+    border: 1px solid #ccc;
+    background-position: left center;
+    box-shadow: 0px 1px 2px 0px #393333, 0px 0.2px 2px 0px #393333;
+    border-radius: 5px;
+
+}
+.mytb:active {
+    background-image: url('../Images/fa-user4-small.png');
+    background-repeat: no-repeat;
+    height: 34px;
+    padding-left: 36px;
+    border: 1px solid #ccc;
+    background-position:left center;
+}
+/*textbox 2 effects*/
+.mytb2 {
+    background-image: url('../Images/fa-lock-small.png');
+    background-repeat: no-repeat;
+    height: 34px;
+    width: 150px;
+    padding-left: 36px;
+    border: 1px solid #ccc;
+    background-position:left center;
+    box-shadow: 0px 1px 2px 0px #393333, 0px 0.2px 2px 0px #393333;
+    border-radius: 5px;
+}
+/*input effects*/
+.text-input {
+  position: relative;
+  margin-top: 50px;
+  
+  input[type="text"], ["password"]
+    display: inline-block;
+    width: 500px;
+    height: 40px;
+    box-sizing: border-box;
+    outline: none;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    padding: 10px 10px 10px 100px;
+    transition: all 0.1s ease-in-out;
+  }
+input[type="text"] + label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 40px;
+    line-height: 40px;
+    color: white;
+    border-radius: 3px 0 0 3px;
+    padding: 0 20px;
+    background: #E03616;
+    transform: translateZ(0) translateX(0);
+    transition: all 0.5s ease-in-out;
+    transition-delay: 0.2s;
+}
+
+input[type="password"] + label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 40px;
+    line-height: 40px;
+    color: white;
+    border-radius: 3px 0 0 3px;
+    padding: 0 20px;
+    background: #E03616;
+    transform: translateZ(0) translateX(0);
+    transition: all 0.3s ease-in-out;
+    transition-delay: 0.2s;
+}
+  
+input[type="text"]:focus + label {
+    transform: translateY(-120%) translateX(0%);
+    border-radius: 3px;
+    transition: all 0.3s ease-in-out;
+}
+
+input[type="password"]:focus + label {
+    transform: translateY(-120%) translateX(0%);
+    border-radius: 3px;
+    transition: all 0.1s ease-in-out;
+}
+  
+input[type="text"]:focus {
+    padding: 0px 38px 0px 25px;
+    transition: all 0.3s ease-in-out;
+    transition-delay: 0.2s;
+}
+
+input[type="password"]:focus {
+    padding: 0px 38px 0px 25px;
+    transition: all 0.3s ease-in-out;
+    transition-delay: 0.1s;
+}
+/*---------------------------------------------------------------------------------*/
+
+/*enter button*/
+.entering {
+    padding: 10px 35px 10px 35px;  
+	overflow:hidden;
+    color: #fff;
+}
+/*
+.entering:after {
+    font-family: FontAwesome;
+    content: "\f101";
+    position: relative;
+    top: 1px;
+    left: -35px;
+    transition: all 0.2s ease;
+    opacity: 0.0;
+}
+.entering:hover:after {
+    left: -30px;
+    padding: 0px 0px 0px 0px;
+    margin-left: 5%;
+    opacity: 1;
+}
+*/
+/*---------------------------------------------------------------------------------*/
+
+/* grid container & item */
+.grid-container {
+    display: grid;
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
+    grid-template-columns: auto auto auto;
+    padding: 5px;
+}
+.grid-item {
+    border: 1px solid #fff;
+    font-size: 16pt;
+}
+/*---------------------------------------------------------------------------------*/
+
+/*button box*/
+.bbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/*---------------------------------------------------------------------------------*/
+
+/*animated fade out */
+.animated {
+-webkit-animation-duration: 13s;
+animation-duration: 13s;
+-webkit-animation-fill-mode: both;
+animation-fill-mode: both;
+}
+         
+@-webkit-keyframes fadeOut {
+0% {opacity: 1;}
+100% {opacity: 0;}
+}
+         
+@keyframes fadeOut {
+0% {opacity: 1;}
+100% {opacity: 0;}
+}
+         
+.fadeOut {
+-webkit-animation-name: fadeOut;
+animation-name: fadeOut;
+}
+/*---------------------------------------------------------------------------------*/
